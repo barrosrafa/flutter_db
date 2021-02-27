@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_db/home.dart';
+import 'package:flutter_db/sqlite/listPerson.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => Home(),
-        '/sqlite': (context) => Container(),
+        '/sqlite': (context) => ListPerson(),
         '/nosql': (context) => Container(),
         '/firebase': (context) => Container(),
       },
